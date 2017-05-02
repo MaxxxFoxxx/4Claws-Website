@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>4Claws</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="opmaak.css" rel="stylesheet" type="text/css"/>
+        <script src="JAVA FILE.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="navigatieblak">
+            <ul>
+                <li><a class="NaviLeft" href="#home">Home</a></li>
+                <li><a class="NaviLeft" href="#news">Info</a></li>
+                <li><a class="NaviRight" href="#contact">Contact</a></li>
+                <li><a class="NaviRight" href="#about">About</a></li>
+            </ul>
+        </div>
+        <div id="container">
+            <img class="slides" src="Random/Dark Star Khazix Orianna.png" alt="foto1">
+            <img class="slides" src="Random/Rumble.png" alt="foto2">
+            <img class="slides" src="Random/League Of Legends Logo.png" alt="foto3">
+            <img class="slides" src="Random/khazix.png" alt="foto4">
+            <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+            <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+        </div>
+    </body>
+    <script>
+    var index = 1;
+    showImage(1);
+
+    function plusIndex(n) {
+        index = index + 1;
+        showImage(index);
+    }
+
+    function showImage(n) {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        if(n > x.length){ index = 1;}
+        if(n < 1){ index = x.length;}
+        for (i=0; i<x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[index-1].style.display = "block";
+    }
+    </script>
+</html>
