@@ -8,13 +8,19 @@ and open the template in the editor.
     Author     : Rick Waaijer
 */
 /* NavigatieBar BEGIN */
+body {
+  margin-top: 0;
+  margin-left: 1px;
+  margin-right: 1px;
+}
 ul {
     list-style-type: none;
     margin: 0;
+    margin-bottom: 10px;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    border: red solid 1px;
+    border: red solid 2px;
 }
 
 .NaviLeft {
@@ -32,6 +38,7 @@ li a {
     text-decoration: none;
     margin-left: 20px;
     margin-right: 20px;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 li a:hover {
@@ -41,13 +48,24 @@ li a:hover {
 
 /* Layout BEGIN */
 html {
-    background-color: black;
+    background-color: gray;
 }
-/* Banner BEGIN */
+.begroeting {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+}
+#tekstOnderSlider {
+  text-align: justify;
+  margin-left: 480px;
+  margin-right: 480px;
+  color: white;
+}
+/* Slider BEGIN */
 #container {
     width: 50%;
     height: 500px;
-    border: 1px solid white;
+    border: 2px solid red;
     margin: 0 auto;
     position: relative;
 }
@@ -61,10 +79,10 @@ html {
     width: 50px;
     height: 50px;
     border: none;
-    border-radius: 25px;
-    top: 200px;
-    background-color: black;
-    color: white;
+    border-radius: 5px;
+    top: 215px;
+    background-color: red;
+    color: black;
     font-size: 20px;
 }
 #container>#btn1:hover {
@@ -85,5 +103,8 @@ html {
     position: relative;
     float: right;
 }
-/* Banner END */
+/* Slider END */
+hr {
+  width: 1400px;
+}
 /* Layout END */

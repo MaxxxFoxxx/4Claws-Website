@@ -10,17 +10,24 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-        <script src="functions.js" type="text/javascript"></script>
     </head>
     <body>
-        <div id="navigatieblak">
+<!--NavigatieBalk-->
+        <div id="navigatiebalk">
             <ul>
-                <li><a class="NaviLeft" href="#home">Home</a></li>
-                <li><a class="NaviLeft" href="#news">Info</a></li>
-                <li><a class="NaviRight" href="#contact">Contact</a></li>
-                <li><a class="NaviRight" href="#about">About</a></li>
+              <li><a class="NaviLeft" href="Home.html">Home</a></li>
+              <li><a class="NaviLeft" href="#Info">Info</a></li>
+              <li><a class="NaviRight" href="#contact">Contact</a></li>
+              <li><a class="NaviRight" href="AboutPage.html">About</a></li>
             </ul>
         </div>
+<!--NavigatieBalk-->
+<!--tekst Begroeting-->
+        <div class="begroeting">
+            <h1>Welcome Player</h1>
+        </div>
+<!--tekst Begroeting-->
+<!--Slider Deel1-->
         <div id="container">
             <img class="slides" src="Random/Dark Star Khazix Orianna.png" alt="foto1">
             <img class="slides" src="Random/Rumble.png" alt="foto2">
@@ -29,10 +36,19 @@ and open the template in the editor.
             <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
             <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095;</button>
         </div>
-    </body>
+<!--Slider Deel1-->
+<br>
+<hr>
+<br>
+<p id="tekstOnderSlider">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu fringilla sapien. Quisque rhoncus ut est ut malesuada. Cras finibus aliquam gravida. Morbi in aliquet orci. Nulla facilisis, libero ac maximus hendrerit, nunc quam ultrices lorem, placerat commodo turpis ante id ipsum. Maecenas non urna vel ipsum consectetur vulputate ac et lacus. Nulla ornare ullamcorper ante, quis fermentum justo aliquam quis. Sed sit amet sem a orci euismod lacinia. Aenean suscipit tristique velit, in cursus ex egestas eu. Maecenas vitae metus sem. Nam non quam eu justo lobortis ullamcorper. Aliquam pulvinar, nibh eget elementum semper, ex mi fringilla risus, non malesuada neque turpis vel erat. Cras eget maximus est, et ultricies nulla. Pellentesque interdum sollicitudin augue at feugiat. Maecenas ac orci sed magna eleifend eleifend et ac nibh. Pellentesque massa dui, facilisis nec tempor non, sollicitudin nec elit.
+
+  In quis lectus condimentum, rutrum magna vel, facilisis massa. Donec eget nisl quam. Cras eu ligula mauris. Donec auctor, est sit amet condimentum euismod, nibh ante varius sapien, non sodales ante metus sed velit. Aenean cursus ante sit amet urna ultrices condimentum. Phasellus eu tincidunt enim. Sed facilisis ex dapibus, suscipit diam bibendum, tempor nunc. Integer placerat ante nibh, non faucibus ligula tincidunt in. In pulvinar finibus tellus ultrices maximus. Quisque quam mauris, placerat in tempor eu, consequat scelerisque massa. Cras elementum sem sit amet arcu maximus imperdiet. Vivamus risus eros, fermentum faucibus varius nec, egestas a ante. Maecenas bibendum, tortor eu varius pulvinar, arcu ipsum vestibulum neque, vitae elementum felis enim vel augue. Aliquam nec est ut velit tincidunt semper. Nulla suscipit placerat sem vel pharetra.
+</p>
+<!--Slider Deel2-->
     <script>
-    var index = 1;
-    showImage(1);
+        var index = 1;
+        showImage(1);
 
     function plusIndex(n) {
         index = index + 1;
@@ -50,4 +66,5 @@ and open the template in the editor.
         x[index-1].style.display = "block";
     }
     </script>
+<!--Slider Deel2 -->
 </html>
